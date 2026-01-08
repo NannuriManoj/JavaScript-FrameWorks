@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title comes from server-side data -->
+    <title><%= name %></title>
+
+    <!-- Linking CSS file served from public folder -->
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <!-- Subreddit title -->
+    <h1>You're browsing the <%= name %> subreddit</h1>
+
+    <!-- Subreddit description -->
+    <h2><%= description %></h2>
+
+    <!-- Subscriber count -->
+    <p><%= subscribers %> subs</p>
+
+    <hr>
+
+    <!-- Loop through posts array -->
+    <% for (let post of posts) { %>
+        <section>
+            <p>
+                <!-- Post title and author -->
+                <%= post.title %> - <b><%= post.author %></b>
+
+                <!-- Conditionally render image if it exists -->
+                <% if (post.img) { %>
+                    <img src="<%= post.img %>" alt="Post image">
+                <% } %>
+            </p>
+        </section>
+    <% } %>
+
+</body>
+</html>

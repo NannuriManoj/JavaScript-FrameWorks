@@ -12,6 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "colors": "^1.4.0",
+    "ejs": "^3.1.10",
     "express": "^5.2.1",
     "give-me-a-joke": "^0.5.1"
   }
