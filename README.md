@@ -7,9 +7,9 @@ The goal of this repository is to learn how HTTP servers work using Node.js and 
 Tech stack used includes JavaScript, Node.js, Express.js, EJS, and npm.
 
 To run the server, install dependencies using `npm install`, then start the server using:
-
+```
 node index.js
-
+```
 After starting the server, open your browser and visit:
 
 http://localhost:3000
@@ -39,7 +39,7 @@ http://localhost:3000
 - Authentication basics  
 - API testing using Postman  
 
-Author
+## Author
 
 Manoj Nannuri  
 B.Tech CSE  
