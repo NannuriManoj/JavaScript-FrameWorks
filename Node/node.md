@@ -21,3 +21,15 @@ Server (Node.js)
 - Common JS
 
 Node REPL - Read Evaluate Print loop
+
+## GLOBALS - variables/ function provided by Node.js runtime that can be accessed in anyfile. NO Window 
+- __dirname - gives the current directory
+- __filename - file name 
+- requrie - function to use modules (CommonJS)
+- module - info about current module (file)
+- process - info about the env where the program is being executed
+- setTimeOut/ setInterval - skip some time and execute
+
+- CommonJs, every file is module (by default)
+- Modules, Encapsulated code (only share minimum)
+
